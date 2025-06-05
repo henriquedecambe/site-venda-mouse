@@ -1,24 +1,135 @@
-:root{
-    --vermelho-principal:#FF0000;
-    --botao-vermelho:#c20d0d;
-    --cor-de-fundo:#00030C;
-    --cor-letra-segundaria:#FFFFFF; 
-}
 
-body{
-    background-color:var(--cor-de-fundo);
-    color: var(--vermelho-principal);
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000; 
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+  }
 
-.container{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.container__botao{
-    background-color: var(--botao-vermelho);
-    border-radius: 5px;
-    padding: 1em;
+  .container__botao{
+    background-color:#b31111;
+    width: 1000px;
+    border-radius: 10px;
+    padding: 1.3em;
     color: var(--cor-letra-segundaria);
-    display: block;
+    display: center;
+    text-decoration: none;
+    margin-bottom: 1em;
 }
+  
+  
+  h1, h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  h1 span, h2 span, .highlight {
+    color: #e60000; 
+  }
+  
+  p {
+    color: #ccc;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  
+  section {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  
+  section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+ 
+  .features {
+    display: grid;
+    gap: 40px;
+  }
+  
+  @media (min-width: 768px) {
+    .features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .features {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  
+  .price {
+    background-color: #111;
+    padding: 50px 30px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .price h2 {
+    color: #e60000;
+    margin-bottom: 10px;
+  }
+  
+  .price .price-value {
+    font-size: 2.5rem;
+    color: #b31111;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .price small {
+    display: block;
+    color: #aaa;
+    margin-top: -10px;
+  }
+  
+  
+  .btn {
+    display: inline-block;
+    background-color: #e61010;
+    color: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #cc0000;
+  }
+  
+ 
+  footer {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 60px;
+    color: #666;
+  }
+  
