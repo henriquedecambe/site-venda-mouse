@@ -31,12 +31,19 @@
 }
   
   
-  h1, h2 {
+   h1{
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 20px;
     color: #fff;
+  }
+   h2 {
+    font-size: 2rem;
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
   }
   
   h1 span, h2 span, .highlight {
@@ -63,68 +70,14 @@
     margin-top: 20px;
   }
   
+  .valor {
+    font-size: 2rem;
+    color: #fafafa;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
  
-  .features {
-    display: grid;
-    gap: 40px;
-  }
-  
-  @media (min-width: 768px) {
-    .features {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .features {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  
-  .price {
-    background-color: #111;
-    padding: 50px 30px;
-    border-radius: 20px;
-    text-align: center;
-  }
-  
-  .price h2 {
-    color: #e60000;
-    margin-bottom: 10px;
-  }
-  
-  .price .price-value {
-    font-size: 2.5rem;
-    color: #b31111;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .price small {
-    display: block;
-    color: #aaa;
-    margin-top: -10px;
-  }
-  
-  
-  .btn {
-    display: inline-block;
-    background-color: #e61010;
-    color: white;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 10px;
-    margin-top: 20px;
-    transition: background 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #cc0000;
-  }
-  
  
   footer {
     font-size: 0.75rem;
